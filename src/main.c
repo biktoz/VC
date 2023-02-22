@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-#include "console.c"
 #include "parser.c"
 
 
@@ -15,18 +14,18 @@ int main(int argc, char* argv[]){
             return 0;
         }
         else if(!strcmp(argv[1], "override")){
-           console_log("Overrided!\n", YELLOW);
+           //console_log("Overrided!\n", YELLOW);
            return 0;
         }
         else if(!strcmp(argv[1], "delete")){
-            console_log("Deleted!\n", RED);
+            //console_log("Deleted!\n", RED);
             return 0;
         }
         else{
-            console_log("Command not found!\n", RED);
+            //console_log("Command not found!\n", RED);
             return 1;
         }
     }
-    console_log("Command not found!\n", RED);
+    //console_log("Command not found!\n", RED);
     return 0;
 }

@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include "save.c"
+
+
 
 int parse(int function){
     FILE* fp;
@@ -31,7 +34,7 @@ int parse(int function){
     //printf("PROJECT NAME: %s\n", projectName);
 
     if(function == 0){
-        printf("Saving...");
+        save(path, projectName);
     }
     else if(function == 1){
         printf("Overriding...");
