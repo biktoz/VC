@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "save.c"
-
-
+#include "delete.c"
 
 int parse(int function){
     FILE* fp;
@@ -30,18 +29,14 @@ int parse(int function){
     }
 
     //Debug printf
-    //printf("PATH: %s\n", path);
-    //printf("PROJECT NAME: %s\n", projectName);
+    printf("PATH: %s\n", path);
+    printf("PROJECT NAME: %s\n", projectName);
 
     if(function == 0){
         save(path, projectName);
     }
     else if(function == 1){
-        printf("Overriding...");
-        
-    }
-    else if(function == 2){
-        printf("Deleting...");
+       delete(path, projectName);
     }
 
 

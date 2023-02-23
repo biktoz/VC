@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "colors.h"
+#include "lib/colors.h"
 
 
 void console_log(char* message, char* COLOR){

@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "console.c"
 
 void save(char* path, char* projectName){
     
