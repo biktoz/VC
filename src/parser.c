@@ -29,8 +29,8 @@ int parse(int function){
     }
 
     //Debug printf
-    printf("PATH: %s\n", path);
-    printf("PROJECT NAME: %s\n", projectName);
+    //printf("PATH: %s\n", path);
+    //printf("PROJECT NAME: %s\n", projectName);
 
     if(function == 0){
         save(path, projectName);

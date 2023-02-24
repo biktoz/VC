@@ -7,6 +7,7 @@ void save(char* path, char* projectName){
     strcpy(cmd, "zip -r ");
     strcat(cmd, path);
     strcat(cmd, ".zip .");
+    
     system(cmd);
 
     char cmd2[1000];
